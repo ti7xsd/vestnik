@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Моят Вестник</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Разгръщащ се вестник</h1>
+
+  <div id="book" class="book">
+    <div class="page" id="page1">
+      <h2>Страница 1</h2>
+      <input type="file" accept="image/*" onchange="previewImage(event, 'img1')">
+      <img id="img1" class="preview">
+    </div>
+    <div class="page" id="page2">
+      <h2>Страница 2</h2>
+      <input type="file" accept="image/*" onchange="previewImage(event, 'img2')">
+      <img id="img2" class="preview">
+    </div>
+  </div>
+
+  <button onclick="nextPage()">Следваща страница</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
